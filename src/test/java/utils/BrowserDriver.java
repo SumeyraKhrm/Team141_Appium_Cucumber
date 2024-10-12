@@ -39,10 +39,10 @@ public class BrowserDriver {
             caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, ANDROIDVERSION);
             caps.setCapability(MobileCapabilityType.PLATFORM_NAME, PLATFORM);
             caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, OTOMASYON_ISMI);
-            caps.setCapability(MobileCapabilityType.BROWSER_NAME,"chrome");
-           // caps.setCapability("chromeDriverExecutable","C:\\Users\\ahmet\\IdeaProjects\\Team_141_Cucumber\\Driver\\chromedriver.exe");
-
-            caps.setCapability(MobileCapabilityType.NO_RESET,false);
+            caps.setCapability(MobileCapabilityType.BROWSER_NAME,"chrome"); // ya boyle
+            //caps.setCapability("chromeDriverExecutable","C:\\Users\\ahmet\\IdeaProjects\\Team_141_Cucumber\\Driver\\chromedriver.exe");
+            // ya da boyle
+             caps.setCapability(MobileCapabilityType.NO_RESET,false);
             /* eger false olursa; her test baslangicinda kullanici datalari(tercihleri) sifirlanir ve uygulama
             her seferinde ilk yuklendigi haliyle calisir
              */
