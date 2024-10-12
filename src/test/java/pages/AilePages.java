@@ -68,7 +68,7 @@ public class AilePages {
     @FindBy(xpath = "//*[@text='Gider eklendi.']")
     public MobileElement giderEklendiText;
 
-    public void aySecmeMethodu(int gidilecekAY,String secilecekGun) throws InterruptedException {
+    public void aySecmeMethodu(int gidilecekAY,String secilecekGun) throws InterruptedException {  //takvim üzerinden istenilen gün ve ay için
         for (int i = 0; i <gidilecekAY ; i++) {
             nextMonth.click();
             Thread.sleep(1000);
