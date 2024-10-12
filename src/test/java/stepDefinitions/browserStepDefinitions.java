@@ -8,6 +8,8 @@ import utils.BrowserDriver;
 
 public class browserStepDefinitions {
     Actions actions=new Actions(BrowserDriver.getBrowserDriver());
+    // istenilen web elemente hareket etmek için git
+
     ObiletPage page=new ObiletPage();
     @Given("kullanici {string} sayfasina gider")
     public void kullanici_sayfasina_gider(String url) {
@@ -31,7 +33,7 @@ public class browserStepDefinitions {
     }
     @Given("gelen bilet fiyatlarinin tl oldugu dogrulanir")
     public void gelen_bilet_fiyatlarinin_tl_oldugu_dogrulanir() {
-        // Assert.assertTrue(page.priceType.getText().contains("TL"));
-        actions.moveToElement(page.priceType).perform();
+        Assert.assertTrue(page.priceType.getText().contains("TL"));
+        //actions.moveToElement(page.priceType).perform();
     }
 }
