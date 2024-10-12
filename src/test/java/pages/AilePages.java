@@ -94,7 +94,7 @@ public class AilePages {
         yasKutusu.sendKeys(ConfigReader.getProperty(yas));
         meslekKutusu.sendKeys(ConfigReader.getProperty(meslek));
         ReusableMethods.scrollWithUiScrollableAndClick("Kaydet");
-        Assert.assertEquals(isimKutusu.getText(), ConfigReader.getProperty(isim));
+        Assert.assertEquals(isimKutusu.getText(), ConfigReader.getProperty(isim));  // yazılan isim , gönderilen isimle aynımı
         Assert.assertEquals(soyisimKutusu.getText(),ConfigReader.getProperty(soyIsim));
         Assert.assertEquals(sehirKutusu.getText(), ConfigReader.getProperty(sehir));
         Assert.assertEquals(yasKutusu.getText(), ConfigReader.getProperty(yas));
@@ -112,7 +112,7 @@ public class AilePages {
     public void ilkEkranAyarlari(int xPress,int yPress, int bekleme,int xMove,int yMove,String girisYap) throws InterruptedException {
         Driver.getAndroidDriver();
         Thread.sleep(2000);
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < 6; i++) {  // kac defa ekranı kaydırıcaksam
             ReusableMethods.ekranKaydirmaMethodu(xPress,yPress,bekleme,xMove,yMove);
         }
         ReusableMethods.scrollWithUiScrollableAndClick(girisYap);

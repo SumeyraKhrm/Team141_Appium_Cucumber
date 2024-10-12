@@ -25,7 +25,7 @@ public class ReusableMethods {
                 .perform();
     }
 
-    public static void scrollWithUiScrollableAndClick(String elementText) {
+    public static void scrollWithUiScrollableAndClick(String elementText) {   //text locateni bulur ve tıklar
         AndroidDriver driver = (AndroidDriver)  Driver.getAndroidDriver();
         driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"" + elementText + "\"))");
         driver.findElementByXPath("//*[@text='" + elementText + "']").click();
